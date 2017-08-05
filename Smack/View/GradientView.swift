@@ -31,6 +31,7 @@ class GradientView: UIView {
             self.setNeedsLayout()
         }
     }
+
     
     override func layoutSubviews() {
         let gradientLayer = CAGradientLayer()

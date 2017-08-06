@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0012CF541F37873C00207292 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012CF531F37873C00207292 /* UserDataService.swift */; };
 		005496561F3680AA006A7844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005496551F3680AA006A7844 /* Constants.swift */; };
 		005496581F368418006A7844 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005496571F368418006A7844 /* LoginVC.swift */; };
 		00C0BD7E1F362B4B0049198B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C0BD7D1F362B4B0049198B /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0012CF531F37873C00207292 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		005496551F3680AA006A7844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		005496571F368418006A7844 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		00C0BD7A1F362B4B0049198B /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				00C659141F37584A0020BD00 /* AuthService.swift */,
+				0012CF531F37873C00207292 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				00C0BD971F3638380049198B /* ChatVC.swift in Sources */,
 				00C659171F3769BF0020BD00 /* RoundedButton.swift in Sources */,
 				00C0BD991F3638490049198B /* ChannelVC.swift in Sources */,
+				0012CF541F37873C00207292 /* UserDataService.swift in Sources */,
 				00CDAFF71F3722DC004B52CD /* CreateAccountVC.swift in Sources */,
 				00C659151F37584A0020BD00 /* AuthService.swift in Sources */,
 				005496581F368418006A7844 /* LoginVC.swift in Sources */,

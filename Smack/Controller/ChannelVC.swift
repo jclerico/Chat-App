@@ -28,6 +28,10 @@ class ChannelVC: UIViewController {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
             //Show profile page
@@ -40,18 +44,20 @@ class ChannelVC: UIViewController {
     }
     
    @objc  func userDataDidChange(_ notif: Notification) {
-    if AuthService.instance.isLoggedIn {
-        loginBtn.setTitle(UserDataService.instance.name, for: .normal)
-        userImg.image = UIImage(named: UserDataService.instance.avatarName)
-        userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-    } else {
-        loginBtn.setTitle("Login", for: .normal)
-        userImg.image = UIImage(named: "menuProfileIcon")
-        userImg.backgroundColor = UIColor.clear
-        }
+    setupUserInfo()
     }
     
-    
+    func setupUserInfo() {
+        if AuthService.instance.isLoggedIn {
+            loginBtn.setTitle(UserDataService.instance.name, for: .normal)
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
+        } else {
+            loginBtn.setTitle("Login", for: .normal)
+            userImg.image = UIImage(named: "menuProfileIcon")
+            userImg.backgroundColor = UIColor.clear
+        }
+    }
     
     
     

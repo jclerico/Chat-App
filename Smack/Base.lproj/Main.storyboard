@@ -556,6 +556,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Rzm-OJ-umi" eventType="touchUpInside" id="BMq-hj-lDO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6Y-lZ-1pj">
                                 <rect key="frame" x="62" y="319" width="251" height="30"/>
@@ -571,22 +574,31 @@
                                     <action selector="createAccountBtnPressed:" destination="Rzm-OJ-umi" eventType="touchUpInside" id="DBa-uY-AcZ"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Yv3-IK-u3W">
+                                <rect key="frame" x="168.5" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ob8-GP-F9E" firstAttribute="top" secondItem="V1r-vj-IAA" secondAttribute="bottom" constant="60" id="1Es-TN-08L"/>
                             <constraint firstItem="G6Y-lZ-1pj" firstAttribute="top" secondItem="VY9-B3-jza" secondAttribute="bottom" id="9WQ-nO-32j"/>
+                            <constraint firstItem="Yv3-IK-u3W" firstAttribute="centerY" secondItem="Y5N-Pk-st5" secondAttribute="centerY" constant="-100" id="9k4-MX-X64"/>
                             <constraint firstItem="Ob8-GP-F9E" firstAttribute="centerX" secondItem="Y5N-Pk-st5" secondAttribute="centerX" id="B6P-Em-woT"/>
                             <constraint firstItem="KsE-9S-iYd" firstAttribute="centerX" secondItem="Y5N-Pk-st5" secondAttribute="centerX" id="HJh-Sk-NtH"/>
                             <constraint firstItem="VY9-B3-jza" firstAttribute="top" secondItem="KsE-9S-iYd" secondAttribute="bottom" constant="40" id="Lxd-4m-mzQ"/>
                             <constraint firstItem="VY9-B3-jza" firstAttribute="centerX" secondItem="Y5N-Pk-st5" secondAttribute="centerX" id="PBG-Qd-LuE"/>
                             <constraint firstItem="G6Y-lZ-1pj" firstAttribute="centerX" secondItem="Y5N-Pk-st5" secondAttribute="centerX" id="QoP-BW-G2l"/>
+                            <constraint firstItem="Yv3-IK-u3W" firstAttribute="centerX" secondItem="Y5N-Pk-st5" secondAttribute="centerX" id="SAa-n1-8Fa"/>
                             <constraint firstItem="gLB-0d-euB" firstAttribute="trailing" secondItem="Y5N-Pk-st5" secondAttribute="trailingMargin" id="SbL-6J-3b0"/>
                             <constraint firstItem="gLB-0d-euB" firstAttribute="top" secondItem="V1r-vj-IAA" secondAttribute="bottom" constant="8" id="rHH-4w-pqr"/>
                             <constraint firstItem="KsE-9S-iYd" firstAttribute="top" secondItem="Ob8-GP-F9E" secondAttribute="bottom" constant="40" id="zzU-Jw-D0Q"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="7we-og-8wd" id="jg4-2U-UxP"/>
+                        <outlet property="spinner" destination="Yv3-IK-u3W" id="kJM-Kv-jSn"/>
+                        <outlet property="usernameTxt" destination="Bss-6D-2mv" id="Xbl-Uf-MAf"/>
                         <segue destination="BKD-CM-cDa" kind="show" identifier="toCreateAccount" id="aG5-rV-ivg"/>
                     </connections>
                 </viewController>

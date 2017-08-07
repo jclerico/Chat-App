@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0012CF541F37873C00207292 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0012CF531F37873C00207292 /* UserDataService.swift */; };
+		002C01C11F38BFBD00C8CD32 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002C01C01F38BFBD00C8CD32 /* ChannelCell.swift */; };
 		005496561F3680AA006A7844 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005496551F3680AA006A7844 /* Constants.swift */; };
 		005496581F368418006A7844 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005496571F368418006A7844 /* LoginVC.swift */; };
 		005B521A1F389EB800163F74 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005B52181F389EB800163F74 /* ProfileVC.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		0012CF531F37873C00207292 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		002C01C01F38BFBD00C8CD32 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		005496551F3680AA006A7844 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		005496571F368418006A7844 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		005B52181F389EB800163F74 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				00C659161F3769BF0020BD00 /* RoundedButton.swift */,
 				00DB3B951F386BF60082BCB2 /* AvatarCell.swift */,
 				00DB3B971F387D780082BCB2 /* CircleImage.swift */,
+				002C01C01F38BFBD00C8CD32 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				005B521A1F389EB800163F74 /* ProfileVC.swift in Sources */,
+				002C01C11F38BFBD00C8CD32 /* ChannelCell.swift in Sources */,
 				00C0BD971F3638380049198B /* ChatVC.swift in Sources */,
 				007950511F3869C6000563D2 /* AvatarPickerVC.swift in Sources */,
 				00C659171F3769BF0020BD00 /* RoundedButton.swift in Sources */,

@@ -90,8 +90,6 @@ class AuthService {
                 let json = JSON(data: data)
                 self.userEmail = json["user"].stringValue
                 self.authToken = json["token"].stringValue
-                
-                
                 self.isLoggedIn = true
                 completion(true)
             } else {
@@ -151,11 +149,4 @@ class AuthService {
         let name = json["name"].stringValue
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
     }
-    
-    
-    
-    
-    
-    
-    
 }

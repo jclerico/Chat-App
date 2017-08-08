@@ -13,13 +13,8 @@ class ChannelCell: UITableViewCell {
     //Outlets
     @IBOutlet weak var channelName: UILabel!
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -43,10 +38,4 @@ class ChannelCell: UITableViewCell {
             }
         }
     }
-    
-    
-    
-    
-    
-
 }

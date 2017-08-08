@@ -79,15 +79,5 @@ class SocketService: NSObject {
             guard let typingUsers = dataArray[0] as? [String: String] else { return }
             completionHandler(typingUsers)
         }
-        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-
 }

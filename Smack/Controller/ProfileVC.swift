@@ -16,13 +16,9 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var bgView: UIView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
-        
     }
     
     @IBAction func closeModalPressed(_ sender: Any) {
@@ -48,12 +44,4 @@ class ProfileVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
-    
-    
-    
 }

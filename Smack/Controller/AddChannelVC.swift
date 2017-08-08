@@ -15,16 +15,10 @@ class AddChannelVC: UIViewController {
     @IBOutlet weak var chanDesc: UITextField!
     @IBOutlet weak var bgView: UIView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupView()
-        
-        
     }
-    
     
     @IBAction func createChannelPressed(_ sender: Any) {
         guard let channelName = nameTxt.text , nameTxt.text != "" else { return }
@@ -37,13 +31,12 @@ class AddChannelVC: UIViewController {
         
     }
     
-    
     @IBAction func closeModalPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     func setupView() {
-        let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
+    let closeTouch = UITapGestureRecognizer(target: self, action: #selector(AddChannelVC.closeTap(_:)))
         bgView.addGestureRecognizer(closeTouch)
         
         nameTxt.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder])
@@ -53,13 +46,4 @@ class AddChannelVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

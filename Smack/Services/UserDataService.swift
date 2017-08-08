@@ -60,7 +60,6 @@ class UserDataService {
         let newUIColor = UIColor(red: rfloat, green: gfloat, blue: bfloat, alpha: afloat)
         
         return newUIColor
-        
     }
     
     func logoutUser() {
@@ -75,10 +74,4 @@ class UserDataService {
         MessageService.instance.clearChannels()
         MessageService.instance.clearMessages()
     }
-    
-    
-    
-    
-    
-    
 }
